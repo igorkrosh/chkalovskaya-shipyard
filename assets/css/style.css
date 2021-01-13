@@ -386,6 +386,7 @@ section
     width: 880px;
     margin: auto;
     position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
 }
 
 .sect_video .video_wrapper .plyr__control--overlaid
@@ -445,4 +446,5 @@ section
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: 0.5s;
+    pointer-events: none;
 }
