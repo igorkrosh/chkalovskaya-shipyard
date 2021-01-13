@@ -1,5 +1,10 @@
 @import 'fonts.css';
 
+:root 
+{
+    --plyr-color-main: #133157;
+}
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -44,6 +49,11 @@ header
     width: 100%;
     z-index: 100;
     background-color: #ffffff;
+}
+
+section
+{
+    padding-top: 90px;
 }
 
 .navbar .row:nth-child(1)
@@ -369,4 +379,70 @@ header
 .btn_follow:hover:after
 {
     left: 6px;
+}
+
+.sect_video .video_wrapper
+{
+    width: 880px;
+    margin: auto;
+    position: relative;
+}
+
+.sect_video .video_wrapper .plyr__control--overlaid
+{
+    padding: 25px;
+    z-index: 5;
+    opacity: 1;
+}
+
+.sect_video .video_wrapper .plyr__control--overlaid:after
+{
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    background: #133157;
+    opacity: 0.5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.sect_video .video_wrapper .plyr__control--overlaid:hover:after
+{
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.sect_video .video_wrapper .plyr--playing .plyr__control--overlaid:after, .sect_video .video_wrapper .plyr--playing .plyr__control--overlaid
+{
+    opacity: 0;
+}
+
+.sect_video .video_wrapper.hide_controls .plyr__controls
+{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(100%);
+}
+
+.sect_video .video_wrapper.hide_controls .video_title
+{
+    opacity: 1;
+}
+
+.sect_video .video_wrapper .video_title
+{
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+    padding: 15px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.5s;
 }
