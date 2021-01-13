@@ -33,7 +33,7 @@ body
 {
     padding-top: 15px;
     height: 160px;
-    background-color: #ffffff;
+    
 }
 
 header
@@ -43,6 +43,7 @@ header
     top: 0;
     width: 100%;
     z-index: 100;
+    background-color: #ffffff;
 }
 
 .navbar .row:nth-child(1)
