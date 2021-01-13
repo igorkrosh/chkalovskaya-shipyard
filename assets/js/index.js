@@ -4,7 +4,7 @@ function Core()
 {
     InitWow();
     InitPlyr();
-    SetMediaGallerySect();
+    InitSimpleLightbox();
 }
 
 function InitWow()
@@ -29,7 +29,9 @@ function InitPlyr()
     })
 }
 
-function SetMediaGallerySect()
+function InitSimpleLightbox()
 {
     $('.sect_gallery .gallery_grid .gallery_item').simpleLightbox();
+    $('.sect_news .lats_news .news_image').simpleLightbox();
+    $('.sect_news .news_list .news_item .news_image').simpleLightbox();
 }
