@@ -318,3 +318,54 @@ header
     background-color: rgba(0, 0, 0, 0.6);
     font-size: 17px;
 }
+
+.sect_about_us
+{
+    background: url(../images/bg/sect_about_us.jpg) no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding: 85px 0 65px 0;
+    text-align: center;
+}
+
+.title
+{
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.sect_about_us p
+{
+    margin-bottom: 50px;
+    font-weight: 300;
+    padding: 0 100px;
+    line-height: 25px;
+}
+
+.btn_follow
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    padding-left: 40px;
+    position: relative;
+}
+
+.btn_follow:after
+{
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background: url(../images/icons/btn_follow.png);
+    left: 0;
+    top: -2px;
+    transition: 0.5s;
+}
+
+.btn_follow:hover:after
+{
+    left: 6px;
+}
