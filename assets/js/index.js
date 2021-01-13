@@ -4,6 +4,7 @@ function Core()
 {
     InitWow();
     InitPlyr();
+    SetMediaGallerySect();
 }
 
 function InitWow()
@@ -26,4 +27,9 @@ function InitPlyr()
             $('.sect_video .video_wrapper').removeClass('hide_controls');
         }
     })
+}
+
+function SetMediaGallerySect()
+{
+    $('.sect_gallery .gallery_grid .gallery_item').simpleLightbox();
 }
