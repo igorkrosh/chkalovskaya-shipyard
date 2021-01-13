@@ -1,1 +1,195 @@
 @import 'fonts.css';
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+input:focus, button, select:focus
+{
+    outline: none;
+}
+
+a, button
+{
+    cursor: pointer;
+}
+
+body
+{
+    font-family: 'Open Sans';
+    margin: 0;
+    padding-top: 160px;
+}
+
+.container
+{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.navbar
+{
+    padding-top: 15px;
+    height: 160px;
+    background-color: #ffffff;
+}
+
+header
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.navbar .row:nth-child(1)
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo
+{
+    display: flex;
+}
+
+.logo .logo_text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.logo .logo_title
+{
+    font-size: 19px;
+    font-weight: 700;
+    color: #133157;
+}
+
+.logo .logo_text .text
+{
+    font-size: 13px;
+}
+
+.links_wrapper
+{
+    display: flex;
+    align-items: center;
+}
+
+.links_wrapper .link
+{
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin: 0 5px;
+    transition: 0.5s;
+}
+
+.links_wrapper .link:hover
+{
+    transform: scale(1.1);
+}
+
+.links_wrapper .link.inst
+{
+    background: url(../images/icons/inst.png);
+    background-size: cover;
+    width: 29px;
+}
+
+.links_wrapper .link.vk
+{
+    background: url(../images/icons/vk.png);
+    background-size: cover;
+}
+
+.links_wrapper .link.fb
+{
+    background: url(../images/icons/fb.png);
+    background-size: cover;
+}
+
+.contacts_wrapper
+{
+    display: flex;
+    align-items: center;
+}
+
+.contacts_wrapper .contact
+{
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    padding-left: 45px;
+    margin-left: 15px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contacts_wrapper .contact:hover
+{
+    transform: scale(1.1);
+}
+
+.contacts_wrapper .contact.mail:after
+{
+    width: 31px;
+    height: 20px;
+    background: url(../images/icons/mail.png);
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.contacts_wrapper .contact.phone:after
+{
+    width: 25px;
+    height: 26px;
+    background: url(../images/icons/phone.png);
+    content: "";
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+}
+
+.menu ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.menu ul a
+{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    position: relative;
+}
+
+.menu ul a:after
+{
+    content: "";
+    position: absolute;
+    width: 0%;
+    top: 100%;
+    left: 50%;
+    height: 1px;
+    background-color: #000000;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.menu ul a:hover:after, .menu ul a.active:after
+{
+    width: 100%;
+}
