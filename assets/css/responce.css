@@ -288,7 +288,7 @@
 
     .first_scroll:after
     {
-        content: none;
+        background-position-x: 46%;
     }
 
     .first_scroll .wrapper .awards_wrapper
