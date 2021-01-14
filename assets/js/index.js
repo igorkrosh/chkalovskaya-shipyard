@@ -5,6 +5,7 @@ function Core()
     InitWow();
     InitPlyr();
     InitSimpleLightbox();
+    InitOwl();
 }
 
 function InitWow()
@@ -34,4 +35,16 @@ function InitSimpleLightbox()
     $('.sect_gallery .gallery_grid .gallery_item').simpleLightbox();
     $('.sect_news .lats_news .news_image').simpleLightbox();
     $('.sect_news .news_list .news_item .news_image').simpleLightbox();
+}
+
+function InitOwl()
+{
+    $(".sect_our_partners .owl-carousel").owlCarousel({
+        items: 6,
+        loop: true,
+        autoplay: true,
+        nav: true,
+        navContainer: '.sect_our_partners .slider_navs',
+        navText: ['', '']
+    });
 }
