@@ -65,6 +65,7 @@ section:last-of-type
 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo
@@ -322,16 +323,14 @@ section:last-of-type
     object-position: bottom;
     transition: 0.5s;
     filter: grayscale(100%);
-}
-
-.images_follow_wrapper .image_follow:hover
-{
-    height: 240px;
+    bottom: 0;
 }
 
 .images_follow_wrapper .image_follow:hover img 
 {
     filter: grayscale(0%);
+    height: 240px;
+    z-index: 10;
 }
 
 .images_follow_wrapper .follow_title
@@ -756,3 +755,73 @@ footer .menu ul li
     margin-left: 15px;
 }
 
+.btn_menu
+{
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: #133157;
+    position: relative;
+    display: none;
+}
+
+.btn_menu span
+{
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #ffffff;
+    left: 8px;
+    transition: 0.5s;
+    top: 21px
+}
+
+.btn_menu:hover span
+{
+    width: 29px;
+}
+
+.btn_menu:after, .btn_menu:before
+{
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 3px;
+    background-color: #ffffff;
+    left: 8px;
+    transition: 0.5s;
+}
+
+.btn_menu:after
+{
+    top: 10px;
+}
+
+.btn_menu:before
+{
+    bottom: 10px;
+}
+
+.btn_menu.active:after
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.btn_menu.active:before
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.btn_menu.active span
+{
+    opacity: 0;
+}
+
+header .menu .contacts_wrapper
+{
+    display: none;
+}

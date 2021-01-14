@@ -6,6 +6,7 @@ function Core()
     InitPlyr();
     InitSimpleLightbox();
     InitOwl();
+    SetMobileMenu();
 }
 
 function InitWow()
@@ -45,6 +46,36 @@ function InitOwl()
         autoplay: true,
         nav: true,
         navContainer: '.sect_our_partners .slider_navs',
-        navText: ['', '']
+        navText: ['', ''],
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 4
+            },
+            1024: {
+                items: 6
+            },
+            1200: {
+                items:6
+            }
+        }
     });
+}
+
+function SetMobileMenu()
+{
+    $('.btn_menu').on('click', function() {
+        if ($('.menu').hasClass('active'))
+        {
+            $('.menu').removeClass('active');
+            $(this).removeClass('active');
+        }
+        else
+        {
+            $('.menu').addClass('active');
+            $(this).addClass('active');
+        }
+    })
 }

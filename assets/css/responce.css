@@ -35,3 +35,299 @@
         font-size: 13px;
     }
 }
+
+@media (max-width: 992px) 
+{
+    .container
+    {
+        max-width: 768px;
+    }
+
+    .logo .logo_title
+    {
+        display: none;
+    }
+
+    .logo .logo_text .text
+    {
+        display: none;
+    }
+
+    .btn_menu
+    {
+        display: block;
+    }
+
+    .navbar
+    {
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    header .menu
+    {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        top: 0;
+        left: 0;
+        z-index: -1;
+        padding-top: 125px;
+        transition: 0.5s;
+        transform: translateX(-100%);
+    }
+
+    header .menu.active
+    {
+        transform: translateX(0%);
+    }
+
+    header .menu ul
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .menu ul li
+    {
+        margin-bottom: 20px;
+    }
+
+    header .menu ul a
+    {
+        font-size: 18px;
+    }
+
+    .first_scroll .wrapper .awards_wrapper
+    {
+        width: 315px;
+    }
+
+    .first_scroll .first_scroll_title h1
+    {
+        font-size: 55px;
+    }
+
+    .first_scroll:after
+    {
+        background-position-x: 10%;
+    }
+
+    .images_follow_wrapper
+    {
+        flex-wrap: wrap;
+    }
+
+    .images_follow_wrapper .image_follow
+    {
+        width: 290px;
+    }
+
+    .images_follow_wrapper
+    {
+        justify-content: center;
+    }
+
+    .first_scroll
+    {
+        padding-top: 0px;
+    }
+
+    .sect_video .video_wrapper
+    {
+        width: 100%;
+    }
+
+    .sect_news .lats_news .news_image
+    {
+        width: 360px;
+        height: 280px;
+    }
+
+    footer .container
+    {
+        flex-direction: column;
+    }
+
+    footer .menu ul li
+    {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 768px) 
+{
+    .container
+    {
+        max-width: 540px;
+    }
+
+    header .contacts_wrapper
+    {
+        display: none;
+    }
+    
+    header .menu .contacts_wrapper
+    {
+        display: block;
+        text-align: center;
+    }
+
+    .logo_image 
+    {
+        height: 50px;
+    }
+
+    .logo_image img
+    {
+        height: 100%;
+        width: auto;
+    }
+
+    header .menu
+    {
+        padding-top: 80px;
+    }
+
+    .first_scroll .first_scroll_title h1
+    {
+        font-size: 45px;
+    }
+
+    .first_scroll .wrapper .awards_wrapper
+    {
+        width: 185px;
+    }
+
+    .first_scroll .first_scroll_title span
+    {
+        font-size: 30px;
+    }
+
+    .first_scroll .wrapper
+    {
+        align-items: center;
+    }
+
+    .images_follow_wrapper .image_follow
+    {
+        width: 270px;
+    }
+
+    .first_scroll:after
+    {
+        background-position-x: 0;
+    }
+
+    body
+    {
+        padding-top: 80px;
+    }
+
+    .sect_gallery .gallery_grid
+    {
+        grid-template-rows: 20% 30% 30% 20%;
+        grid-template-columns: 50% 50%;
+        height: 800px;
+    }
+
+    .sect_news .lats_news
+    {
+        flex-direction: column-reverse;
+    }
+
+    .sect_news .lats_news .news_desc
+    {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .sect_news .news_list .news_item
+    {
+        width: 260px;
+        margin-bottom: 25px;
+    }
+
+    footer .container
+    {
+        flex-direction: row;
+    }
+
+    .menu ul
+    {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 540px) 
+{
+    .container
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 100%;
+    }
+
+    .first_scroll .wrapper
+    {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .first_scroll .first_scroll_title h1
+    {
+        font-size: 36px;
+    }
+
+    .first_scroll .first_scroll_title span
+    {
+        font-size: 23px;
+    }
+
+    .first_scroll:after
+    {
+        content: none;
+    }
+
+    .first_scroll .wrapper .awards_wrapper
+    {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .sect_news .lats_news .news_image
+    {
+        width: 280px;
+    }
+
+    .sect_about_us p
+    {
+        padding: 0;
+    }
+
+    footer .container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .container .info, footer .menu
+    {
+        width: 170px;
+    }
+
+    header .menu ul
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .contacts_wrapper .contact
+    {
+        margin-left: 0;
+        width: 195px;
+        margin-bottom: 10px;
+    }
+}
