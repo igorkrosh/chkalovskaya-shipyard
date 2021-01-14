@@ -694,6 +694,12 @@ section:last-of-type
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    transition: 0.5s;
+}
+
+.slider_wrapper .slider_navs .owl-prev:hover, .slider_wrapper .slider_navs .owl-next:hover
+{
+    transform: translateY(-50%) scale(1.1);
 }
 
 .slider_wrapper .slider_navs .owl-next
@@ -706,5 +712,45 @@ section:last-of-type
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    transition: 0.5s;
+}
+
+footer
+{
+    background-color: #133157;
+    padding: 35px 0;
+    color: #ffffff;
+}
+
+footer .container
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer .container .info
+{
+    font-size: 10px;
+}
+
+footer .menu
+{
+    font-size: 11px;
+}
+
+footer .menu ul a
+{
+    font-weight: 300;
+}
+
+footer .menu ul a:after
+{
+    background-color: #ffffff;
+}
+
+footer .menu ul li
+{
+    margin-left: 15px;
 }
 
