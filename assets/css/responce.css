@@ -167,6 +167,11 @@
         justify-content: space-between;
         flex-direction: row;
     }
+
+    .sect_gallery .gallery_grid.auto_rows
+    {
+        grid-auto-rows: 200px;
+    }
 }
 
 @media (max-width: 768px) 
@@ -356,5 +361,22 @@
     footer .menu ul li
     {
         margin-bottom: 10px;
+    }
+
+    .sect_gallery .gallery_grid.auto_rows
+    {
+        grid-auto-rows: 150px;
+    }
+
+    .sect_gallery .cards_controller
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .sect_gallery .btn_card_switch
+    {
+        margin-bottom: 15px;
     }
 }
