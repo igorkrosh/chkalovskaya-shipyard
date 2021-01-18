@@ -379,4 +379,24 @@
     {
         margin-bottom: 15px;
     }
+
+    .sect_pagetitle h1
+    {
+        font-size: 30px;
+    }
+
+    .sect_pagetitle
+    {
+        min-height: 150px;
+    }
+
+    .about_slider_wrapper .slider_item
+    {
+        height: 250px;
+    }
+
+    .sect_about_slider .about_slider_wrapper .owl-dots
+    {
+        bottom: 15px;
+    }
 }
