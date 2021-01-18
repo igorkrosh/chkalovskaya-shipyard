@@ -825,3 +825,36 @@ header .menu .contacts_wrapper
 {
     display: none;
 }
+
+.sect_pagetitle
+{
+    min-height: 240px;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+}
+
+.sect_pagetitle h1
+{
+    font-family: 'Roboto Slab';
+    font-size: 33px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0;
+    padding: 15px 0;
+    position: relative;
+}
+
+.sect_pagetitle h1:after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 3px;
+    background-color: #ffffff;
+}
