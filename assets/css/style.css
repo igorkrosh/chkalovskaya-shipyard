@@ -858,3 +858,84 @@ header .menu .contacts_wrapper
     height: 3px;
     background-color: #ffffff;
 }
+
+.sect_contacts_wrapper .col_contacts
+{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.col_contacts .col_contacts_item
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.sect_contacts_wrapper .item_title
+{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.col_contacts_item .item_name
+{
+    margin-bottom: 20px;
+}
+.col_contacts_item .item_phone, .col_contacts_item .item_mail
+{
+    font-size: 16px;
+    color: inherit;
+    text-decoration: none;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.col_contacts_item .item_phone:after
+{
+    content: "";
+    width: 19px;
+    height: 21px;
+    background-image: url(../images/icons/phone_sm.png);
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.col_contacts_item .item_mail:after
+{
+    content: "";
+    width: 22px;
+    height: 15px;
+    background-image: url(../images/icons/mail_sm.png);
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.col_contacts_item a:hover
+{
+    color: #3d98de;
+}
+
+.sect_contacts_wrapper
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sect_contacts_wrapper .col-map
+{
+    width: 740px;
+}
+
+.sect_contacts_wrapper .ymap
+{
+    margin-bottom: 30px;
+}
