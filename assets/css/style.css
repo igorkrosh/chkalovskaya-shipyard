@@ -1003,3 +1003,63 @@ header .menu .contacts_wrapper
     grid-template-rows: inherit;
     height: auto;
 }
+
+.sect_pagetitle.black h1
+{
+    color: #000000;
+}
+
+.sect_pagetitle.black h1:after
+{
+    background-color: #000000;
+}
+
+.about_slider_wrapper .slider_item
+{
+    height: 450px;
+    position: relative;
+    display: block;
+}
+
+.about_slider_wrapper .slider_item:hover .bg_image
+{
+    transform: translate(-50%, -50%) scale(1.02);
+}
+
+.sect_about_slider .about_slider_wrapper .owl-dots button
+{
+    width: 10px;
+    height: 10px;
+    background-color: #133157;
+    border-radius: 50%;
+    margin: 7px;
+    position: relative;
+}
+
+.sect_about_slider .about_slider_wrapper .owl-dots button:after
+{
+    content: "";
+    position: absolute;
+    width: 180%;
+    height: 180%;
+    border: 1px solid #133157;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.sect_about_slider .about_slider_wrapper .owl-dots button.active:after
+{
+    opacity: 1;
+}
+
+.sect_about_slider .about_slider_wrapper .owl-dots
+{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}

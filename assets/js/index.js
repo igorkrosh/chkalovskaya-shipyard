@@ -38,11 +38,12 @@ function InitSimpleLightbox()
     $('.sect_gallery .gallery_grid .gallery_item').simpleLightbox();
     $('.sect_news .lats_news .news_image').simpleLightbox();
     $('.sect_news .news_list .news_item .news_image').simpleLightbox();
+    $('.about_slider_wrapper .slider_item').simpleLightbox();
 }
 
 function InitOwl()
 {
-    $(".sect_our_partners .owl-carousel").owlCarousel({
+    $('.sect_our_partners .owl-carousel').owlCarousel({
         items: 6,
         loop: true,
         autoplay: true,
@@ -64,6 +65,10 @@ function InitOwl()
             }
         }
     });
+    $('.about_slider_wrapper').owlCarousel({
+        items: 1,
+        dots: true
+    })
 }
 
 function SetMobileMenu()
