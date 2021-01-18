@@ -155,6 +155,18 @@
         margin-left: 0;
         margin-right: 10px;
     }
+
+    .sect_contacts_wrapper
+    {
+        flex-direction: column;
+    }
+
+    .sect_contacts_wrapper .col_contacts
+    {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
 
 @media (max-width: 768px) 
@@ -258,6 +270,11 @@
     .menu ul
     {
         flex-direction: column;
+    }
+
+    .sect_contacts_wrapper .col-map
+    {
+        width: 100%;
     }
 }
 
