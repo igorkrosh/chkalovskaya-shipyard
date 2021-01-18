@@ -6,7 +6,9 @@ function Core()
     InitPlyr();
     InitSimpleLightbox();
     InitOwl();
+
     SetMobileMenu();
+    SetCardSwitcher();
 }
 
 function InitWow()
@@ -79,3 +81,36 @@ function SetMobileMenu()
         }
     })
 }
+
+function SetCardSwitcher()
+{
+    $('.btn_card_switch').on('click', function() {
+        if ($(this).hasClass('active'))
+        {
+            return;
+        }
+
+        $('.btn_card_switch').removeClass('active');
+        $(this).addClass('active');
+
+        let targetCard = $(this).attr('target');
+
+        SwitchCard(targetCard)
+    });
+}
+
+function SwitchCard(target)
+{
+    $('.card.active').animate({
+        opacity: 0
+    }, 500, function() {
+        $('.card.active').removeClass('active');
+
+        $(`[card-name="${target}"]`).css('opacity', 0);
+        $(`[card-name="${target}"]`).addClass('active');
+        $(`[card-name="${target}"]`).animate({
+            opacity: 1
+        }, 500)
+    });
+}
+

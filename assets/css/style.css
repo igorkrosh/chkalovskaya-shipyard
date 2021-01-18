@@ -940,3 +940,66 @@ header .menu .contacts_wrapper
 {
     margin-bottom: 30px;
 }
+
+.card_viewer 
+{
+    position: relative;
+}
+
+.card_viewer .card:not(.active)
+{
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.sect_gallery .btn_card_switch
+{
+    font-size: 18px;
+    border: none;
+    background: none;
+    transition: 0.5s;
+    position: relative;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.sect_gallery .btn_card_switch:after
+{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.sect_gallery .btn_card_switch:hover:after
+{
+    width: 100%;
+}
+
+.sect_gallery .btn_card_switch.active
+{
+    font-weight: 700;
+}
+
+.sect_gallery .btn_card_switch.active:after
+{
+    width: 100%;
+}
+
+.sect_gallery .cards_controller
+{
+    margin-bottom: 50px;
+}
+
+.sect_gallery .gallery_grid.auto_rows
+{
+    grid-auto-rows: 300px;
+    grid-template-rows: inherit;
+    height: auto;
+}
