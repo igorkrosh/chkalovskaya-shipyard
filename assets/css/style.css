@@ -1153,4 +1153,10 @@ header .menu .contacts_wrapper
     border-bottom: 1px solid #cbcbcb;
     padding-top: 25px;
     position: relative;
+    margin-top: 50px;
+}
+
+.info_block:first-of-type
+{
+    margin-top: 0;
 }
