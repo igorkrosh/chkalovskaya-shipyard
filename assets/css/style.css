@@ -73,6 +73,17 @@ section:last-of-type
     display: flex;
 }
 
+.logo .logo_image
+{
+    display: flex;
+    align-items: center;
+}
+
+.logo .logo_image img
+{
+    height: 60px;
+}
+
 .logo .logo_text
 {
     display: flex;

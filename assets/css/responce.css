@@ -183,6 +183,11 @@
     {
         margin-bottom: 25px;
     }
+
+    .logo .logo_image img
+    {
+        height: 40px;
+    }
 }
 
 @media (max-width: 768px) 
@@ -291,6 +296,12 @@
     .sect_contacts_wrapper .col-map
     {
         width: 100%;
+    }
+
+    .logo .logo_image
+    {
+        overflow-x: hidden;
+        width: 35px;
     }
 }
 
