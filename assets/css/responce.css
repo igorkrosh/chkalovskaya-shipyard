@@ -404,7 +404,7 @@
 
     .sect_pagetitle h1
     {
-        font-size: 30px;
+        font-size: 22px;
     }
 
     .sect_pagetitle
@@ -425,5 +425,15 @@
     .info_row
     {
         padding-right: 0;
+    }
+
+    .cke_wrapper h1
+    {
+        font-size: 22px;
+    }
+
+    .cke_wrapper table td
+    {
+        font-size: 10px;
     }
 }
