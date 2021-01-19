@@ -1063,3 +1063,9 @@ header .menu .contacts_wrapper
     left: 50%;
     transform: translateX(-50%);
 }
+
+.sect_soc_widgets .widgets_wrapper
+{
+    display: flex;
+    justify-content: space-evenly;
+}
