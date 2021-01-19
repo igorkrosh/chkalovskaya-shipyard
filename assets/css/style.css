@@ -1082,3 +1082,75 @@ header .menu .contacts_wrapper
     display: flex;
     justify-content: space-evenly;
 }
+
+.cke_wrapper a 
+{
+    color: #3d98de;
+    text-decoration: none;
+}
+
+.info_row
+{
+    margin-bottom: 25px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 80px;
+}
+
+.info_row.pdf, .info_row.info
+{
+    padding-left: 60px;
+
+}
+
+.info_row.pdf:after
+{
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 45px;
+    background: url(../images/icons/pdf.png);
+    left: 0;
+    top: 5px;
+}
+
+.info_row.info:after
+{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../images/icons/info.png);
+    left: 5px;
+    top: 15px;
+}
+
+.info_block .date
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 900;
+    font-size: 13px;
+    padding-left: 25px;
+}
+
+.info_block .date:after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 16px;
+    height: 15px;
+    background: url(../images/icons/date.png);
+}
+
+.info_block
+{
+    border-bottom: 1px solid #cbcbcb;
+    padding-top: 25px;
+    position: relative;
+}

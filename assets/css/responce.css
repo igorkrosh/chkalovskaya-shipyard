@@ -421,4 +421,9 @@
     {
         bottom: 15px;
     }
+
+    .info_row
+    {
+        padding-right: 0;
+    }
 }
