@@ -25,6 +25,7 @@ body
     margin: 0;
     padding-top: 160px;
     color: #000000;
+    overflow-x: hidden;
 }
 
 .container
@@ -1187,4 +1188,101 @@ header .menu .contacts_wrapper
 .cke_wrapper table
 {
     border-collapse: collapse;
+}
+
+body.cke_wrapper
+{
+    padding-top: 0;
+}
+
+.cke_wrapper .block_image
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.cke_wrapper .block_image .block_text
+{
+    max-width: 540px;
+}
+
+.cke_wrapper .block_image.left .block_text
+{
+    padding-left: 25px;
+}
+
+.cke_wrapper .block_image.right .block_text
+{
+    padding-right: 25px;
+}
+
+.cke_wrapper h2
+{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto Slab';
+}
+
+.cke_wrapper .text_centred
+{
+    padding: 0 60px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.cke_wrapper .image_centred
+{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cke_wrapper .block_bg_image
+{
+    position: relative;
+    padding: 60px 0;
+    color: #ffffff;
+}
+
+.cke_wrapper .block_bg_image .bg_image
+{
+    width: 100vw;
+    z-index: -1;
+}
+
+.cke_wrapper .block_bg_image .cke_widget_wrapper
+{
+    position: initial;
+}
+
+.cke_wrapper .block_text_icon
+{
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: black;
+}
+
+.cke_wrapper .block_text_icon img
+{
+    margin-right: 30px;
+}
+
+.cke_wrapper .block_two_images_centred
+{
+    display: flex;
+    align-self: center;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.cke_wrapper .block_two_images_centred img
+{
+    margin: 20px;
 }
